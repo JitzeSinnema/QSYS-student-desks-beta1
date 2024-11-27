@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Desk Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        label, input, button {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assign Students to Desks</h1>
+    <form id="studentForm">
+        <div id="desks">
+            <!-- Desk input fields will be inserted here dynamically -->
+        </div>
+        <button type="button" onclick="submitData()">Submit</button>
+    </form>
+
+    <script>
+        const desks = 8;
+        const desksDiv = document.getElementById('desks');
+
+        // Dynamically create input fields for each desk
+        for (let i = 1; i <= desks; i++) {
+            const deskDiv = document.createElement('div');
+            deskDiv.innerHTML = `
+                <label for="desk${i}">Desk ${i} (Student Names, comma separated):</label><br>
+                <input type="text" id="desk${i}" name="desk${i}"><br>
+            `;
+            desksDiv.appendChild(deskDiv);
+        }
+
+        // Submit the form data to the GitHub JSON file (placeholder functionality)
+        function submitData() {
+            let studentData = {};
+            for (let i = 1; i <= desks; i++) {
+                const studentNames = document.getElementById(`desk${i}`).value;
+                studentData[`Desk${i}`] = studentNames.split(',').map(name => name.trim()).filter(name => name);
+            }
+
+            console.log("Data to be submitted:", studentData);
+            // Placeholder for actual submission logic to GitHub
+            alert("Data submitted successfully! (In actual implementation, this will be saved to GitHub)");
+        }
+    </script>
+</body>
+</html>
