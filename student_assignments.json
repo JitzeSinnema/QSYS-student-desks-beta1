@@ -1,10 +1,10 @@
 {
-    "Desk1": [],
-    "Desk2": [],
-    "Desk3": [],
-    "Desk4": [],
-    "Desk5": [],
-    "Desk6": [],
-    "Desk7": [],
-    "Desk8": []
+    "Desk1": [Babs],
+    "Desk2": [Hans],
+    "Desk3": [Fred],
+    "Desk4": [Cor],
+    "Desk5": [Guusje],
+    "Desk6": [Bert],
+    "Desk7": [Aad],
+    "Desk8": [Sophie]
 }
