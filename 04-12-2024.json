@@ -7,7 +7,7 @@
     "Desk6": ["Liesje"],
     "Desk7": ["Abdel", "Emily"],
     "Desk8": ["Ercin"],
-    "TrainerName": ["Sander Zeilstra"],
-    "Day": ["Dag 1"],
-    "TrainingName": ["Control 301 Advanced"]
+    "trainerName": ["Sander Zeilstra"],
+    "day": ["Dag 1"],
+    "trainingName": ["Control 301 Advanced"]
 }
